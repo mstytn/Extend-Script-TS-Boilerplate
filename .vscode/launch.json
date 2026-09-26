@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Launch",
+            "hostAppSpecifier": "indesign-21.064",
+            "script": "${workspaceFolder}/build/dnt.js",
+            "engineName": "main",
+            "debugLevel": 1
+        }
+    ]
+}

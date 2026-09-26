@@ -1,0 +1,28 @@
+{
+    "name": "indesign_scr",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch:tsc": "tsc --noEmit --watch",
+        "watch:build": "esbuild source/index.ts --bundle --outfile=build/dnt.js --target=es5 --format=global --watch",
+        "dev": "concurrently \"npm run watch:tsc\" \"npm run watch:build\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "esbuild": "^0.28.2",
+        "minify": "^15.3.1",
+        "types-for-adobe": "^7.2.6",
+        "typescript": "^7.0.2"
+    },
+    "dependencies": {
+        "extendscript-json": "^0.1.1"
+    },
+    "allowScripts": {
+        "esbuild@0.28.2": true,
+        "@swc/core@1.16.2": true
+    }
+}

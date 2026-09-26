@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es2015", // Hedef ECMAScript sürümü (ES5)
+        "module": "esnext", // Modül sistemi yapılandırması
+        "moduleResolution": "bundler", // Modül çözünürlük stratejisi
+        "allowJs": true, // JavaScript dosyalarına izin ver
+        "skipLibCheck": true, // Bildirim dosyalarında tip kontrolünü atlayarak hız kazan
+        "noEmit": true, // Derleme yapma, sadece tip kontrolü gerçekleştir
+        "lib": ["es2015"],
+    },
+    "include": [
+        "source/**/*", // Derlenecek/taranacak kaynak kod dizini
+    ]
+}

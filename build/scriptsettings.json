@@ -1,0 +1,204 @@
+{
+    "base": 1,
+    "fontStyles": [
+        {
+            "name": "icerlek metin Y",
+            "grep": {
+                "__is_regexp__": true,
+                "source": "^•(\\s\\s*|\\t)",
+                "global": true,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "styleCheck": false,
+            "fontStyle": "Light",
+            "sizeCheck": true,
+            "size": 10.5,
+            "replace": true,
+            "from": {
+                "__is_regexp__": true,
+                "source": "^[•](\\t|\\s\\s*)",
+                "global": false,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "to": "•\t"
+        },
+        {
+            "name": "ana metin Y",
+            "grep": {
+                "__is_regexp__": true,
+                "source": "^.{80,}$",
+                "global": true,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "styleCheck": true,
+            "fontStyle": "Regular",
+            "sizeCheck": true,
+            "size": 10.5,
+            "replace": false,
+            "from": {
+                "__is_regexp__": true,
+                "source": "\\t",
+                "global": false,
+                "ignoreCase": false,
+                "multiline": false
+            },
+            "to": "[SKIP]"
+        },
+        {
+            "name": "ana metin Y",
+            "grep": {
+                "__is_regexp__": true,
+                "source": "^\\r|\\n$",
+                "global": true,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "styleCheck": false,
+            "fontStyle": "Regular",
+            "sizeCheck": false,
+            "size": 10.5,
+            "replace": false,
+            "from": {
+                "__is_regexp__": true,
+                "source": "\\t",
+                "global": false,
+                "ignoreCase": false,
+                "multiline": false
+            },
+            "to": "[SKIP]"
+        },
+        {
+            "name": "ana metin Y",
+            "grep": {
+                "__is_regexp__": true,
+                "source": "^.{80,}$",
+                "global": true,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "styleCheck": true,
+            "fontStyle": "Light",
+            "sizeCheck": true,
+            "size": 10.5,
+            "replace": false,
+            "from": {
+                "__is_regexp__": true,
+                "source": "\\t",
+                "global": false,
+                "ignoreCase": false,
+                "multiline": false
+            },
+            "to": "[SKIP]"
+        },
+        {
+            "name": "baslik 2 Y",
+            "grep": {
+                "__is_regexp__": true,
+                "source": "^[0-9]{1,3}\\.[0-9]{1,3}([ ]*|\\t).+$",
+                "global": true,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "styleCheck": true,
+            "fontStyle": "Bold",
+            "size": 12,
+            "sizeCheck": false,
+            "replace": true,
+            "from": {
+                "__is_regexp__": true,
+                "source": "\\t|\\s\\s+",
+                "global": false,
+                "ignoreCase": false,
+                "multiline": false
+            },
+            "to": " "
+        },
+        {
+            "name": "baslik 3 Y",
+            "grep": {
+                "__is_regexp__": true,
+                "source": "^\\([0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]([ ]*|\\t).+$",
+                "global": true,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "styleCheck": true,
+            "fontStyle": "Bold",
+            "size": 12,
+            "sizeCheck": false,
+            "replace": true,
+            "from": {
+                "__is_regexp__": true,
+                "source": "\\t|\\s\\s+",
+                "global": false,
+                "ignoreCase": false,
+                "multiline": false
+            },
+            "to": " "
+        },
+        {
+            "name": "baslik 1 Y",
+            "grep": {
+                "__is_regexp__": true,
+                "source": "^DİPNOT [0-9]{1,3}\\s+–\\s+.+$",
+                "global": true,
+                "ignoreCase": false,
+                "multiline": true
+            },
+            "styleCheck": true,
+            "fontStyle": "Bold",
+            "size": 12,
+            "sizeCheck": false,
+            "replace": true,
+            "from": {
+                "__is_regexp__": true,
+                "source": "\\t|\\s\\s+",
+                "global": false,
+                "ignoreCase": false,
+                "multiline": false
+            },
+            "to": " "
+        }
+    ],
+    "colWidths": [0, 0, 0, 30, 30, 25, 20],
+    "paragraphMappings": [
+        {
+            "fontStyle": "Bold",
+            "charStyle": "bold"
+        },
+        {
+            "fontStyle": "Italic",
+            "charStyle": "italic"
+        },
+        {
+            "fontStyle": "Bold Italic",
+            "charStyle": "bolditalic"
+        }
+    ],
+    "tableMappings": [
+        {
+            "fontStyle": "Bold",
+            "charStyle": "tbold"
+        },
+        {
+            "fontStyle": "Italic",
+            "charStyle": "titalic"
+        },
+        {
+            "fontStyle": "Bold Italic",
+            "charStyle": "tbolditalic"
+        }
+    ],
+    "superScriptStyle": "super",
+    "tableCellStylesNames": ["cizgili Y", "ilk Y"],
+    "superscriptTableStyle": "tsuper",
+    "tableParagraphStyle": "tablo metin Y",
+    "useSuffixOnChecks": true,
+    "suffix": " Y",
+    "usePrefixOnChecks": true,
+    "prefix": "Y ",
+    "hafSize": false
+}
